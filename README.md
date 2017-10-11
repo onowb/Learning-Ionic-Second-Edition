@@ -24,3 +24,11 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+### Example 5
+```bash
+$ ionic serve --lab
+```
+
+#### Call
+http://localhost:8100/ionic-lab
+

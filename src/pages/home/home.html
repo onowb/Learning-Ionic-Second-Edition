@@ -6,18 +6,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-card>
-  <div style="position: relative">
-    <img src="http://maps.googleapis.com/maps/api/staticmap?center=Malaysia&size=640x400&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyA4rAT0fdTZLNkJ5o0uaAwZ89vVPQpr_Kc">
-    <ion-fab bottom right edge>
-      <button ion-fab mini>
-        <ion-icon name="pin"></ion-icon>
-      </button>
-    </ion-fab>
-  </div>
-  <ion-item>
-    <ion-icon subtle large item-left name="map"></ion-icon>
-    <h2>Indonesia</h2>
-    <p>Truely Asia!</p>
-  </ion-item>
-</ion-card>
+<h4>Named Icons</h4>
+<ion-icon name="heart"></ion-icon>
+<h4>Active & Inactive Icons</h4>
+<ion-icon name="beer" isActive="true"></ion-icon>
+<ion-icon name="beer" isActive="false"></ion-icon>
+<h4>Platform Specific Icons</h4>
+<ion-icon ios="logo-apple" md="logo-android"></ion-icon>
+<h4>Programatically Assigned Icons</h4>
+<ion-icon [name]="myIcon"></ion-icon>

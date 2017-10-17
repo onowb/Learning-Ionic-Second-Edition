@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {ModalController, NavController} from 'ionic-angular';
+import { HelloModalComponent } from '../../components/hello-modal/hello-modal';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,16 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public modalCtrl: ModalController) {
 
+  }
+
+  show() {
+    let modal = this.modalCtrl.create(HelloModalComponent);
+    modal.present();
+    modal.onDidDismiss((data) => {
+      console.log(data);
+    });
   }
 
 }

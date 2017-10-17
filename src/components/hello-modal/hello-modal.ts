@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ViewController} from "ionic-angular";
 
 /**
  * Generated class for the HelloModalComponent component.
@@ -12,11 +13,10 @@ import { Component } from '@angular/core';
 })
 export class HelloModalComponent {
 
-  text: string;
+  constructor(public viewCtrl: ViewController) { }
 
-  constructor() {
-    console.log('Hello HelloModalComponent Component');
-    this.text = 'Hello World';
+  close() {
+    this.viewCtrl.dismiss({'random' : 'data'});
   }
 
 }

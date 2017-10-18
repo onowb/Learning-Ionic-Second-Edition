@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import {HomePage} from "../home/home";
+import {AboutPage} from "../about/about";
 
 /**
  * Generated class for the ContactPage page.
@@ -15,11 +17,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ContactPage');
+  goTo(page) {
+    if (page === 'home') {
+      this.navCtrl.push(HomePage);
+    } else if (page === 'about') {
+      this.navCtrl.push(AboutPage);
+    }
   }
 
+  back() {
+    if (this.navCtrl.length() >= 2) {
+      this.navCtrl.pop();
+    }
+  }
 }

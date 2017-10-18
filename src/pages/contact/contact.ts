@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, Platform} from 'ionic-angular';
 
 /**
  * Generated class for the ContactPage page.
@@ -14,8 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'contact.html',
 })
 export class ContactPage {
+  isWindows: Boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public platform: Platform) {
+    this.isWindows = platform.is('windows');
   }
 
   ionViewDidLoad() {

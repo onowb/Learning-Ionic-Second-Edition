@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
+import { HomePage } from "../home/home";
+import { AboutPage } from "../about/about";
+import { ContactPage } from "../contact/contact";
 
 /**
  * Generated class for the TabsPage page.
@@ -15,11 +18,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  // this tells the tabs component which Pages
+  // should be each tab's root Page
+  tab1Root: any = HomePage;
+  tab2Root: any = AboutPage;
+  tab3Root: any = ContactPage;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
+  constructor() {
+
   }
 
 }

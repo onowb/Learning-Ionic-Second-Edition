@@ -7,12 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>contact</ion-title>
+    <ion-title>Contact</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <label>This is a label that looks different from the one on About Page</label>
+  <ion-item>
+    <ion-icon name="logo-dropbox" item-left></ion-icon>
+    Files
+    <ion-badge item-right [attr.round-badge]="isWindows ? '' : null">175</ion-badge>
+  </ion-item>
 </ion-content>

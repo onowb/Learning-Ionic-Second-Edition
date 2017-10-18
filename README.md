@@ -24,3 +24,8 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+```bash
+http://localhost:8100/?ionicplatform=ios
+http://localhost:8100/?ionicplatform=android
+http://localhost:8100/?ionicplatform=windows
+```

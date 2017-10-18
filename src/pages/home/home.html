@@ -7,5 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button color="secondary" (click)="openAbout()">Go To About</button>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Enter</ion-label>
+      <ion-input placeholder="Something..." #text></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="secondary" (click)="openAbout(text.value)">Go To About</button>
 </ion-content>

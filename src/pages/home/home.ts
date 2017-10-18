@@ -12,8 +12,12 @@ export class HomePage {
 
   }
 
-  openAbout(){
-    this.navCtrl.push(AboutPage);
+  openAbout(text){
+    text = text || 'Nothing was entered';
+
+    this.navCtrl.push(AboutPage, {
+      data: text
+    });
   }
 
 }

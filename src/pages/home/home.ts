@@ -7,8 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  food: string;
 
+  constructor(public navCtrl: NavController) {
+    this.food = 'pizza';
   }
 
 }

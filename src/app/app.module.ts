@@ -21,12 +21,12 @@ import { TabsPage } from "../pages/tabs/tabs";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: 'Go Back',
-      iconMode: 'ios',
-      modalEnter: 'modal-slide-in',
-      modalLeave: 'modal-slide-out',
-      tabsPlacement: 'bottom',
-      pageTransition: 'ios'
+      tabsPlacement: 'bottom', // bottom for all platforms
+      platforms: {
+        ios: {
+          tabsPlacement: 'top', // top only for iOS
+        }
+      }
     })
   ],
   bootstrap: [IonicApp],

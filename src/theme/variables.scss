@@ -50,9 +50,15 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
+.ios{
+  ion-navbar .toolbar-background {
+    background: #2196F3;
+  }
 
-
-
+  ion-navbar .toolbar-title {
+    color: #fff;
+  }
+}
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -66,9 +72,6 @@ $colors: (
     color: #fff;
   }
 }
-
-
-
 
 // App Windows Variables
 // --------------------------------------------------

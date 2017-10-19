@@ -76,9 +76,15 @@ $colors: (
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
+.wp{
+  ion-navbar .toolbar-background {
+    background: #9C27B0;
+  }
 
-
-
+  ion-navbar .toolbar-title {
+    color: #fff;
+  }
+}
 
 // App Theme
 // --------------------------------------------------

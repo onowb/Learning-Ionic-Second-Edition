@@ -84,6 +84,10 @@ $colors: (
   ion-navbar .toolbar-title {
     color: #fff;
   }
+
+  ion-badge[round-badge]{
+    border-radius: 12px;
+  }
 }
 
 // App Theme
